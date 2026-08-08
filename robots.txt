@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayodhya-panel-wale.vercel.app/sitemap.xml
