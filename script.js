@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const msg = encodeURIComponent(
         'Hello, I need PVC panel service.\nName: ' + name + '\nPhone: ' + phone + '\nService: ' + service
       );
-      window.open('https://wa.me/919580659559?text=' + msg, '_blank');
+      window.open('https://wa.me/919653062736?text=' + msg, '_blank');
     });
   }
 
@@ -52,6 +52,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     lightbox.addEventListener('click', function (e) {
       if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
         lightbox.classList.remove('active');
       }
     });
