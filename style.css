@@ -99,11 +99,18 @@ ul{list-style:none}
 .gallery-grid img:hover{transform:scale(1.03)}
 
 /* ===== TESTIMONIALS ===== */
-.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.testimonial-card{background:var(--white);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);border-left:4px solid var(--orange)}
-.testimonial-card p{font-size:.95rem;font-style:italic;color:var(--text);margin-bottom:12px}
-.testimonial-card .name{font-weight:700;color:var(--navy);font-size:.9rem}
-.testimonial-card .stars{color:var(--orange);font-size:1rem;margin-bottom:8px}
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.testimonial-card{background:var(--white);border-radius:12px;padding:28px 24px 22px;box-shadow:0 4px 20px rgba(26,39,68,.08);position:relative;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease;border:1px solid rgba(26,39,68,.06)}
+.testimonial-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--orange),var(--navy))}
+.testimonial-card:hover{transform:translateY(-6px);box-shadow:0 12px 36px rgba(26,39,68,.14)}
+.testimonial-card .quote-icon{font-size:2.2rem;line-height:1;color:var(--orange);opacity:.25;font-family:Georgia,serif;margin-bottom:4px;display:block}
+.testimonial-card p{font-size:.95rem;font-style:italic;color:var(--text);margin-bottom:18px;line-height:1.7;position:relative}
+.testimonial-card .review-footer{display:flex;align-items:center;gap:12px;padding-top:14px;border-top:1px solid rgba(0,0,0,.06)}
+.testimonial-card .avatar{width:42px;height:42px;min-width:42px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.95rem;letter-spacing:.5px}
+.testimonial-card .reviewer-info .name{font-weight:700;color:var(--navy);font-size:.9rem;margin-bottom:2px}
+.testimonial-card .reviewer-info .stars{display:flex;gap:2px}
+.testimonial-card .reviewer-info .stars svg{width:14px;height:14px;fill:var(--orange)}
+
 
 /* ===== CTA BANNER ===== */
 .cta-banner{background:var(--navy);color:#fff;padding:48px 0;text-align:center}
