@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const msg = encodeURIComponent(
         'Hello, I need PVC panel service.\nName: ' + name + '\nPhone: ' + phone + '\nService: ' + service
       );
-      window.open('https://wa.me/919653062736?text=' + msg, '_blank');
+      window.open('https://wa.me/919580659559?text=' + msg, '_blank');
     });
   }
 
