@@ -1,123 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://www.pvcpanelwale.online/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/index.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://www.pvcpanelwale.online/full-interior-work.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-installation.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-price.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://www.pvcpanelwale.online/about.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-panel-installation-ayodhya.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://www.pvcpanelwale.online/contact.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-wall-panel-ayodhya.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-installation-ayodhya.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.pvcpanelwale.online/full-interior-work-ayodhya.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.pvcpanelwale.online/pvc-wall-panel-ayodhya.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-panel-price-ayodhya.html</loc>
-    <lastmod>2026-08-08</lastmod>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-price-ayodhya.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/about.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-installation-lucknow.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/contact.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-installation-gorakhpur.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-panels-lucknow.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-installation-sultanpur.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-panels-sultanpur.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-installation-gonda.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-panels-gonda.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-installation-basti.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/full-interior-work-ayodhya.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-installation-amethi.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/full-interior-work-lucknow.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-installation-barabanki.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/full-interior-work-gonda.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/pvc-panel-installation-ambedkar-nagar.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/full-interior-work-sultanpur.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/full-interior-work-lucknow.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-panels-basti.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/full-interior-work-gorakhpur.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/full-interior-work-basti.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/full-interior-work-sultanpur.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-panels-gorakhpur.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/full-interior-work-gonda.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/full-interior-work-gorakhpur.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/full-interior-work-basti.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-panels-amethi.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/full-interior-work-amethi.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/full-interior-work-amethi.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/full-interior-work-barabanki.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-panels-barabanki.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/full-interior-work-ambedkar-nagar.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/full-interior-work-barabanki.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/privacy-policy.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
   </url>
   <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/pvc-panels-ambedkar-nagar.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://ayodhya-panel-wale.vercel.app/full-interior-work-ambedkar-nagar.html</loc>
-    <lastmod>2026-09-05</lastmod>
-    <priority>0.80</priority>
+    <loc>https://www.pvcpanelwale.online/terms-and-conditions.html</loc>
+    <lastmod>2026-09-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
   </url>
 </urlset>

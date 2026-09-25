@@ -1,0 +1,8 @@
+# Ignore unused assets folder
+unused/
+image/unused/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+*.tmp

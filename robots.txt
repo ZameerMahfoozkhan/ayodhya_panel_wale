@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ayodhya-panel-wale.vercel.app/sitemap.xml
+Sitemap: https://www.pvcpanelwale.online/sitemap.xml
