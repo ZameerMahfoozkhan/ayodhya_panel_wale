@@ -1,83 +1,84 @@
 {
+  "cleanUrls": true,
   "redirects": [
     {
       "source": "/pvc-panels-lucknow.html",
-      "destination": "/pvc-panel-installation-lucknow.html",
+      "destination": "/pvc-panel-installation-lucknow",
       "permanent": true
     },
     {
       "source": "/pvc-panels-lucknow",
-      "destination": "/pvc-panel-installation-lucknow.html",
+      "destination": "/pvc-panel-installation-lucknow",
       "permanent": true
     },
     {
       "source": "/pvc-panels-gorakhpur.html",
-      "destination": "/pvc-panel-installation-gorakhpur.html",
+      "destination": "/pvc-panel-installation-gorakhpur",
       "permanent": true
     },
     {
       "source": "/pvc-panels-gorakhpur",
-      "destination": "/pvc-panel-installation-gorakhpur.html",
+      "destination": "/pvc-panel-installation-gorakhpur",
       "permanent": true
     },
     {
       "source": "/pvc-panels-sultanpur.html",
-      "destination": "/pvc-panel-installation-sultanpur.html",
+      "destination": "/pvc-panel-installation-sultanpur",
       "permanent": true
     },
     {
       "source": "/pvc-panels-sultanpur",
-      "destination": "/pvc-panel-installation-sultanpur.html",
+      "destination": "/pvc-panel-installation-sultanpur",
       "permanent": true
     },
     {
       "source": "/pvc-panels-gonda.html",
-      "destination": "/pvc-panel-installation-gonda.html",
+      "destination": "/pvc-panel-installation-gonda",
       "permanent": true
     },
     {
       "source": "/pvc-panels-gonda",
-      "destination": "/pvc-panel-installation-gonda.html",
+      "destination": "/pvc-panel-installation-gonda",
       "permanent": true
     },
     {
       "source": "/pvc-panels-basti.html",
-      "destination": "/pvc-panel-installation-basti.html",
+      "destination": "/pvc-panel-installation-basti",
       "permanent": true
     },
     {
       "source": "/pvc-panels-basti",
-      "destination": "/pvc-panel-installation-basti.html",
+      "destination": "/pvc-panel-installation-basti",
       "permanent": true
     },
     {
       "source": "/pvc-panels-amethi.html",
-      "destination": "/pvc-panel-installation-amethi.html",
+      "destination": "/pvc-panel-installation-amethi",
       "permanent": true
     },
     {
       "source": "/pvc-panels-amethi",
-      "destination": "/pvc-panel-installation-amethi.html",
+      "destination": "/pvc-panel-installation-amethi",
       "permanent": true
     },
     {
       "source": "/pvc-panels-barabanki.html",
-      "destination": "/pvc-panel-installation-barabanki.html",
+      "destination": "/pvc-panel-installation-barabanki",
       "permanent": true
     },
     {
       "source": "/pvc-panels-barabanki",
-      "destination": "/pvc-panel-installation-barabanki.html",
+      "destination": "/pvc-panel-installation-barabanki",
       "permanent": true
     },
     {
       "source": "/pvc-panels-ambedkar-nagar.html",
-      "destination": "/pvc-panel-installation-ambedkar-nagar.html",
+      "destination": "/pvc-panel-installation-ambedkar-nagar",
       "permanent": true
     },
     {
       "source": "/pvc-panels-ambedkar-nagar",
-      "destination": "/pvc-panel-installation-ambedkar-nagar.html",
+      "destination": "/pvc-panel-installation-ambedkar-nagar",
       "permanent": true
     }
   ]
