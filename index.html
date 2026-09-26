@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
   <!-- LocalBusiness Schema -->
   <script type="application/ld+json">
   {
@@ -99,147 +99,524 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="page-hero" style="padding: 100px 0; background: linear-gradient(rgba(15, 27, 45, 0.8), rgba(15, 27, 45, 0.8)), url('image/pvc-kitchen-panel.png') center/cover;">
-    <div class="container" style="text-align: center;">
-      <h1 style="font-size: 3rem; margin-bottom: 20px; color: #fff;">Transform Your Home with <br><span style="color: var(--orange);">PVC Panel Wale</span></h1>
-      <p style="font-size: 1.2rem; color: #eee; max-width: 800px; margin: 0 auto 30px;">Uttar Pradesh's Leading Experts in PVC Panels, Modular Kitchens, False Ceilings & Custom Furniture.</p>
-      <div class="hero-btns" style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-        <a href="tel:9580659559" class="btn btn-call" style="background: var(--orange); color: #fff; padding: 14px 28px; border-radius: 8px; font-weight: bold; text-decoration: none;">📞 Call 9580659559</a>
-        <a href="#services" class="btn" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.3); color: #fff; padding: 14px 28px; border-radius: 8px; font-weight: bold; text-decoration: none;">Explore Services</a>
+  <section class="home-hero">
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--orange)"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+        <span>UP's #1 Interior &amp; PVC Specialists</span>
+      </div>
+      <h1>Transform Your Home with <br class="desktop-br"><span class="hero-highlight">PVC Panel Wale</span></h1>
+      <p class="hero-sub">Uttar Pradesh's Leading Experts in Waterproof PVC Wall Panels, Modular Kitchens, Modern False Ceilings &amp; Custom Furniture at Direct Factory Rates.</p>
+      
+      <div class="hero-btns">
+        <a href="tel:9580659559" class="btn btn-call">
+          <svg viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.66.58 1 1 0 011 1v3.6a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.6a1 1 0 011 1c0 1.25.2 2.49.58 3.66a1 1 0 01-.24 1.01l-2.32 2.12z" />
+          </svg>
+          <span>Call 9580659559</span>
+        </a>
+        <a href="https://wa.me/919580659559?text=Hello%20PVC%20Panel%20Wale%2C%20I%20am%20interested%20in%20an%20estimate" target="_blank" rel="noopener noreferrer" class="btn btn-wa">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5.1-3.9-10.6-6.9z" fill="white" />
+          </svg>
+          <span>WhatsApp Estimate</span>
+        </a>
+        <a href="#services" class="btn btn-glass">
+          <span>Explore Services ↓</span>
+        </a>
+      </div>
+
+      <!-- Trust Strip -->
+      <div class="hero-trust-strip">
+        <div class="trust-item">
+          <span class="trust-icon">🛡️</span>
+          <span>100% Waterproof</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">⚡</span>
+          <span>24–48h Installation</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">💰</span>
+          <span>Direct Factory Rates</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">📍</span>
+          <span>9+ Cities Across UP</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- HIGHLIGHTS -->
-  <section style="padding: 60px 0; background: var(--light-bg);">
+  <section class="highlights-section">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-        <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: var(--shadow); text-align: center;">
-          <h3 style="color: var(--navy); margin-bottom: 15px;">💯 Premium Quality</h3>
-          <p style="color: var(--text-light); line-height: 1.6;">We use only the highest grade materials for our PVC panels and interior woodwork, ensuring durability that lasts decades.</p>
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="highlight-icon-wrap">💯</div>
+          <h3>Premium Grade Materials</h3>
+          <p>We source heavy-gauge, durable PVC and certified interior wood products that resist moisture, borer, termites, and fire for 10+ years.</p>
         </div>
-        <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: var(--shadow); text-align: center;">
-          <h3 style="color: var(--navy); margin-bottom: 15px;">⚡ Fast Installation</h3>
-          <p style="color: var(--text-light); line-height: 1.6;">Our highly skilled team guarantees quick, spotless, and professional installation across multiple cities in UP.</p>
+        <div class="highlight-card">
+          <div class="highlight-icon-wrap">⚡</div>
+          <h3>Fast, Spotless Fitting</h3>
+          <p>Our experienced craftsmen deliver tidy, precision-measured installations with zero mess and minimal disruption to your daily routine.</p>
         </div>
-        <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: var(--shadow); text-align: center;">
-          <h3 style="color: var(--navy); margin-bottom: 15px;">💰 Best Prices</h3>
-          <p style="color: var(--text-light); line-height: 1.6;">Get direct factory rates with zero hidden charges. We offer the most affordable luxury interior solutions.</p>
+        <div class="highlight-card">
+          <div class="highlight-icon-wrap">💰</div>
+          <h3>Direct Factory Rates</h3>
+          <p>Enjoy transparent per-square-foot pricing with zero middlemen markup. High-end luxury aesthetics at realistic, affordable budgets.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SERVICES SECTION -->
-  <section id="services" style="padding: 80px 0;">
+  <section id="services" class="section">
     <div class="container">
-      <div style="text-align: center; margin-bottom: 50px;">
-        <h2 style="font-size: 2.5rem; color: var(--navy);">Our Expertise</h2>
-        <p style="color: var(--text-light); font-size: 1.1rem; max-width: 600px; margin: 10px auto;">Complete interior solutions tailored for your space.</p>
+      <div class="section-title">
+        <h2>Our Interior &amp; Paneling Expertise</h2>
+        <p>Complete turnkey solutions tailored for modern Indian residences, offices, and commercial retail spaces.</p>
       </div>
       
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+      <div class="services-grid">
         <!-- PVC Wall Panels -->
-        <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); background: #fff;">
-          <img src="image/pvc-wall-panel.png" alt="PVC Wall Panels" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
-          <div style="padding: 24px;">
-            <h3 style="margin-bottom: 10px; color: var(--navy);">PVC Wall Panels</h3>
-            <p style="color: var(--text-light); margin-bottom: 20px;">100% waterproof, termite-proof, and highly durable wall panels in 100+ premium designs.</p>
-            <a href="pvc-wall-panel-ayodhya.html" style="color: var(--orange); font-weight: bold; text-decoration: none;">View Details →</a>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">100+ Designs</span>
+            <img src="image/pvc-wall-panel.png" alt="PVC Wall Panels" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3>PVC Wall Panels</h3>
+            <p>100% waterproof, termite-proof wall panels in wood grain, Italian marble, metallic, and fluted designs.</p>
+            <a href="pvc-wall-panel-ayodhya.html" class="service-link">View Details &amp; Pricing →</a>
           </div>
         </div>
         
         <!-- Modular Kitchen -->
-        <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); background: #fff;">
-          <img src="image/pvc-kitchen-panel.png" alt="Modular Kitchen" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
-          <div style="padding: 24px;">
-            <h3 style="margin-bottom: 10px; color: var(--navy);">Modular Kitchens</h3>
-            <p style="color: var(--text-light); margin-bottom: 20px;">Modern, space-saving, and fully customized kitchen setups designed for Indian homes.</p>
-            <a href="full-interior-work-ayodhya.html" style="color: var(--orange); font-weight: bold; text-decoration: none;">View Details →</a>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">Custom Built</span>
+            <img src="image/pvc-kitchen-panel.png" alt="Modular Kitchen" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3>Modular Kitchens</h3>
+            <p>Ergonomic, waterproof modular kitchens with soft-close Blum/Hettich fittings, acrylic shutters, and smart storage.</p>
+            <a href="full-interior-work-ayodhya.html" class="service-link">View Details &amp; Pricing →</a>
           </div>
         </div>
 
         <!-- False Ceiling -->
-        <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); background: #fff;">
-          <img src="image/pvc-ceiling-panel.png" alt="False Ceiling" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
-          <div style="padding: 24px;">
-            <h3 style="margin-bottom: 10px; color: var(--navy);">Modern False Ceilings</h3>
-            <p style="color: var(--text-light); margin-bottom: 20px;">Elegant POP and PVC false ceiling designs with custom profile lighting installations.</p>
-            <a href="full-interior-work-ayodhya.html" style="color: var(--orange); font-weight: bold; text-decoration: none;">View Details →</a>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">Cove &amp; LED Profiles</span>
+            <img src="image/pvc-ceiling-panel.png" alt="False Ceiling" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3>Modern False Ceilings</h3>
+            <p>Lightweight PVC, Gypsum, and POP false ceilings with concealed magnetic track lights and ambient cove lighting.</p>
+            <a href="full-interior-work-ayodhya.html" class="service-link">View Details &amp; Pricing →</a>
           </div>
         </div>
 
         <!-- TV Units -->
-        <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); background: #fff;">
-          <img src="image/pvc-tv-unit.png" alt="TV Unit Panels" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
-          <div style="padding: 24px;">
-            <h3 style="margin-bottom: 10px; color: var(--navy);">Custom TV Units</h3>
-            <p style="color: var(--text-light); margin-bottom: 20px;">Luxurious living room TV unit setups using louvers, 3D panels, and custom woodwork.</p>
-            <a href="full-interior-work-ayodhya.html" style="color: var(--orange); font-weight: bold; text-decoration: none;">View Details →</a>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">Luxury Woodwork</span>
+            <img src="image/pvc-tv-unit.png" alt="TV Unit Panels" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3>Custom TV Units</h3>
+            <p>Statement living room entertainment consoles featuring fluted charcoal louvers, marble backsplashes, and floating shelves.</p>
+            <a href="full-interior-work-ayodhya.html" class="service-link">View Details &amp; Pricing →</a>
           </div>
         </div>
 
         <!-- 3D Wall Panels -->
-        <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); background: #fff;">
-          <img src="image/pvc-3d-panel.png" alt="3D PVC Panels" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
-          <div style="padding: 24px;">
-            <h3 style="margin-bottom: 10px; color: var(--navy);">3D PVC Panels</h3>
-            <p style="color: var(--text-light); margin-bottom: 20px;">Add a touch of luxury with our seamless, highly durable 3D PVC panels that make any room stand out.</p>
-            <a href="pvc-wall-panel-ayodhya.html" style="color: var(--orange); font-weight: bold; text-decoration: none;">View Details →</a>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">Seamless Depth</span>
+            <img src="image/pvc-3d-panel.png" alt="3D PVC Panels" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3>3D Textured Panels</h3>
+            <p>Architectural geometric 3D wall panels that create rich shadow lines and elevate accent feature walls.</p>
+            <a href="pvc-wall-panel-ayodhya.html" class="service-link">View Details &amp; Pricing →</a>
           </div>
         </div>
 
         <!-- Bedroom Interior -->
-        <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); background: #fff;">
-          <img src="image/pvc-bedroom-panel.png" alt="Bedroom Interior Design" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
-          <div style="padding: 24px;">
-            <h3 style="margin-bottom: 10px; color: var(--navy);">Bedroom Interiors</h3>
-            <p style="color: var(--text-light); margin-bottom: 20px;">Complete bedroom makeovers including custom wardrobes, bed back-paneling, and ambient lighting.</p>
-            <a href="full-interior-work-ayodhya.html" style="color: var(--orange); font-weight: bold; text-decoration: none;">View Details →</a>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">Turnkey Makeover</span>
+            <img src="image/pvc-bedroom-panel.png" alt="Bedroom Interior Design" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3>Bedroom Interiors</h3>
+            <p>Complete master bedroom renovations including floor-to-ceiling sliding wardrobes, acoustic bed backdrops, and dressing areas.</p>
+            <a href="full-interior-work-ayodhya.html" class="service-link">View Details &amp; Pricing →</a>
           </div>
         </div>
 
         <!-- Office & Commercial Spaces -->
-        <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); background: #fff;">
-          <img src="image/pvc-office-panel.png" alt="Commercial Interior Design" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
-          <div style="padding: 24px;">
-            <h3 style="margin-bottom: 10px; color: var(--navy);">Commercial Spaces</h3>
-            <p style="color: var(--text-light); margin-bottom: 20px;">Professional interior work for offices, shops, and showrooms to create a premium working environment.</p>
-            <a href="full-interior-work-ayodhya.html" style="color: var(--orange); font-weight: bold; text-decoration: none;">View Details →</a>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">Retail &amp; Offices</span>
+            <img src="image/pvc-office-panel.png" alt="Commercial Interior Design" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3>Commercial Spaces</h3>
+            <p>Durable, low-maintenance interior installations for corporate offices, retail stores, restaurants, and showrooms.</p>
+            <a href="full-interior-work-ayodhya.html" class="service-link">View Details &amp; Pricing →</a>
           </div>
         </div>
 
         <!-- Professional Installation -->
-        <div style="border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); background: #fff;">
-          <img src="image/pvc-installation.png" alt="Professional Installation" style="width: 100%; height: 200px; object-fit: cover;" loading="lazy">
-          <div style="padding: 24px;">
-            <h3 style="margin-bottom: 10px; color: var(--navy);">Expert Installation</h3>
-            <p style="color: var(--text-light); margin-bottom: 20px;">Our skilled team ensures fast, spotless, and long-lasting installation for all your interior woodwork and panels.</p>
-            <a href="full-interior-work-ayodhya.html" style="color: var(--orange); font-weight: bold; text-decoration: none;">View Details →</a>
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <span class="service-tag">Certified Masters</span>
+            <img src="image/pvc-installation.png" alt="Professional Installation" loading="lazy">
+          </div>
+          <div class="service-card-body">
+            <h3>Professional Fitting</h3>
+            <p>Our skilled in-house installers ensure exact alignment, concealed fasteners, and durable finishes that last.</p>
+            <a href="full-interior-work-ayodhya.html" class="service-link">View Details &amp; Pricing →</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- LOCATIONS SECTION -->
-  <section style="padding: 80px 0; background: var(--navy); color: #fff;">
+  <!-- HOW IT WORKS / PROCESS -->
+  <section class="process-section">
     <div class="container">
-      <div style="text-align: center; margin-bottom: 50px;">
-        <h2 style="font-size: 2.5rem; color: #fff;">Cities We Serve</h2>
-        <p style="color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 600px; margin: 10px auto;">We provide our top-rated services across major cities in Uttar Pradesh.</p>
+      <div class="section-title">
+        <h2>Simple 4-Step Process</h2>
+        <p>From initial design idea to flawless handover in 4 easy steps</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card">
+          <span class="process-step-num">Step 01</span>
+          <h3>Free Consultation</h3>
+          <p>Call or WhatsApp our team with your room dimensions and preferred interior style for an instant ballpark estimate.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-step-num">Step 02</span>
+          <h3>Doorstep Measurement</h3>
+          <p>Our specialist visits your home or site with sample catalogues, assesses wall conditions, and takes laser measurements.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-step-num">Step 03</span>
+          <h3>Final Quote &amp; Samples</h3>
+          <p>Choose from 100+ PVC panel patterns, laminates, and fittings with clear per-sq.ft pricing and zero hidden costs.</p>
+        </div>
+
+        <div class="process-card">
+          <span class="process-step-num">Step 04</span>
+          <h3>Swift &amp; Tidy Fitting</h3>
+          <p>Our certified technicians complete the entire installation in 24–48 hours, clean up thoroughly, and hand over your space.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATIONS SECTION (CITIES WE SERVE WITH LOCATION MARKS) -->
+  <section class="locations-section" id="cities">
+    <div class="container">
+      <div class="section-title">
+        <h2>Cities We Serve Across UP</h2>
+        <p>Prompt doorstep measurement, material delivery &amp; expert installation in 9 major districts</p>
       </div>
       
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;">
-        <a href="pvc-panel-installation-ayodhya.html" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; color: #fff; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.2);">Ayodhya</a>
-        <a href="pvc-panel-installation-lucknow.html" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; color: #fff; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.2);">Lucknow</a>
-        <a href="pvc-panel-installation-gorakhpur.html" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; color: #fff; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.2);">Gorakhpur</a>
-        <a href="pvc-panel-installation-sultanpur.html" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; color: #fff; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.2);">Sultanpur</a>
-        <a href="pvc-panel-installation-gonda.html" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; color: #fff; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.2);">Gonda</a>
-        <a href="pvc-panel-installation-basti.html" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; color: #fff; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.2);">Basti</a>
-        <a href="pvc-panel-installation-amethi.html" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; color: #fff; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.2);">Amethi</a>
-        <a href="pvc-panel-installation-barabanki.html" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; color: #fff; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.2);">Barabanki</a>
-        <a href="pvc-panel-installation-ambedkar-nagar.html" style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; color: #fff; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.2);">Ambedkar Nagar</a>
+      <div class="cities-grid">
+        <!-- Ayodhya -->
+        <a href="pvc-panel-installation-ayodhya.html" class="city-card">
+          <span class="city-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </span>
+          <div class="city-info">
+            <span class="city-name">Ayodhya</span>
+            <span class="city-sub">Headquarters &amp; Hub</span>
+          </div>
+          <span class="city-arrow">→</span>
+        </a>
+
+        <!-- Lucknow -->
+        <a href="pvc-panel-installation-lucknow.html" class="city-card">
+          <span class="city-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </span>
+          <div class="city-info">
+            <span class="city-name">Lucknow</span>
+            <span class="city-sub">Full Interior &amp; PVC</span>
+          </div>
+          <span class="city-arrow">→</span>
+        </a>
+
+        <!-- Gorakhpur -->
+        <a href="pvc-panel-installation-gorakhpur.html" class="city-card">
+          <span class="city-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </span>
+          <div class="city-info">
+            <span class="city-name">Gorakhpur</span>
+            <span class="city-sub">Express Installation</span>
+          </div>
+          <span class="city-arrow">→</span>
+        </a>
+
+        <!-- Sultanpur -->
+        <a href="pvc-panel-installation-sultanpur.html" class="city-card">
+          <span class="city-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </span>
+          <div class="city-info">
+            <span class="city-name">Sultanpur</span>
+            <span class="city-sub">Doorstep Fitting</span>
+          </div>
+          <span class="city-arrow">→</span>
+        </a>
+
+        <!-- Gonda -->
+        <a href="pvc-panel-installation-gonda.html" class="city-card">
+          <span class="city-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </span>
+          <div class="city-info">
+            <span class="city-name">Gonda</span>
+            <span class="city-sub">Home &amp; Shop Interiors</span>
+          </div>
+          <span class="city-arrow">→</span>
+        </a>
+
+        <!-- Basti -->
+        <a href="pvc-panel-installation-basti.html" class="city-card">
+          <span class="city-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </span>
+          <div class="city-info">
+            <span class="city-name">Basti</span>
+            <span class="city-sub">Fast Turnaround</span>
+          </div>
+          <span class="city-arrow">→</span>
+        </a>
+
+        <!-- Amethi -->
+        <a href="pvc-panel-installation-amethi.html" class="city-card">
+          <span class="city-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </span>
+          <div class="city-info">
+            <span class="city-name">Amethi</span>
+            <span class="city-sub">Ceiling &amp; Wall Panels</span>
+          </div>
+          <span class="city-arrow">→</span>
+        </a>
+
+        <!-- Barabanki -->
+        <a href="pvc-panel-installation-barabanki.html" class="city-card">
+          <span class="city-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </span>
+          <div class="city-info">
+            <span class="city-name">Barabanki</span>
+            <span class="city-sub">Quick Installation</span>
+          </div>
+          <span class="city-arrow">→</span>
+        </a>
+
+        <!-- Ambedkar Nagar -->
+        <a href="pvc-panel-installation-ambedkar-nagar.html" class="city-card">
+          <span class="city-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+          </span>
+          <div class="city-info">
+            <span class="city-name">Ambedkar Nagar</span>
+            <span class="city-sub">Complete Interior Setup</span>
+          </div>
+          <span class="city-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM SECTION -->
+  <section class="lead-form-section section-alt">
+    <div class="container">
+      <div class="lead-form">
+        <h3>Get Free Estimate via WhatsApp</h3>
+        <p class="sub">Fill this quick form &amp; we will connect with catalog &amp; pricing</p>
+        <form id="leadForm">
+          <div class="form-group">
+            <label for="leadName">Your Name</label>
+            <input type="text" id="leadName" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="leadPhone">Phone Number</label>
+            <input type="tel" id="leadPhone" placeholder="Enter 10-digit mobile number" required>
+          </div>
+          <div class="form-group">
+            <label for="leadService">Service Required</label>
+            <select id="leadService" required>
+              <option value="">-- Select Interior Service --</option>
+              <option value="PVC Wall Panels">PVC Wall Panels</option>
+              <option value="PVC Ceiling Panels">PVC Ceiling Panels</option>
+              <option value="TV Unit & Louvers">TV Unit &amp; Louvers</option>
+              <option value="Modular Kitchen">Modular Kitchen</option>
+              <option value="3D Wall Panels">3D PVC Wall Panels</option>
+              <option value="Full Bedroom Interior">Full Bedroom Interior</option>
+              <option value="Full House Interior Work">Full House Interior Work</option>
+              <option value="Commercial / Shop Interior">Commercial / Shop Interior</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit">
+            <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+              <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5.1-3.9-10.6-6.9z" fill="white" />
+            </svg>
+            Send via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Clients Say</h2>
+        <p>Real experiences from satisfied homeowners and business owners across UP</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <span class="quote-icon">&ldquo;</span>
+          <p>We got our drawing room and lobby renovated with Italian marble finish PVC panels and false ceiling. The team completed everything in just 2 days without any dust or mess. Highly impressed!</p>
+          <div class="review-footer">
+            <div class="avatar">RV</div>
+            <div class="reviewer-info">
+              <div class="name">Rajesh Verma</div>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <small style="color:var(--text-light);font-size:0.75rem;">Ayodhya (Civil Lines)</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <span class="quote-icon">&ldquo;</span>
+          <p>Got our modular kitchen and TV console made by PVC Panel Wale. Direct factory rates saved us more than 30% compared to local interior shops. Premium soft-close fittings and superb finishing.</p>
+          <div class="review-footer">
+            <div class="avatar">AS</div>
+            <div class="reviewer-info">
+              <div class="name">Amit Srivastava</div>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <small style="color:var(--text-light);font-size:0.75rem;">Lucknow (Gomti Nagar)</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <span class="quote-icon">&ldquo;</span>
+          <p>Had severe dampness on two bedroom walls. Their 100% waterproof PVC paneling solved the seepage issue completely, and the 3D fluted panels look like a 5-star hotel room. Outstanding service!</p>
+          <div class="review-footer">
+            <div class="avatar">PP</div>
+            <div class="reviewer-info">
+              <div class="name">Dr. Pooja Pandey</div>
+              <div class="stars">
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              </div>
+              <small style="color:var(--text-light);font-size:0.75rem;">Gorakhpur (Civil Lines)</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq-section section-alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about PVC panels, interior woodwork, and installation</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Are PVC wall panels really 100% waterproof and termite-proof?</summary>
+          <div class="faq-answer">
+            Yes, absolutely. High-density PVC (polyvinyl chloride) contains zero organic wood fibers, making it entirely impervious to water, seepage, dampness, mold, and termite infestations. They can even be washed with water and mild detergent.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What is the cost of PVC panel installation in Uttar Pradesh?</summary>
+          <div class="faq-answer">
+            PVC panel installation typically ranges from ₹45 to ₹110 per square foot depending on the panel grade, thickness, design (wooden texture, 3D, high-gloss marble), and framework requirements. We offer direct factory rates with no hidden middleman fees.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How long does it take to complete installation for a standard room?</summary>
+          <div class="faq-answer">
+            A standard 10x12 ft or 12x14 ft room's walls or ceiling can usually be completely installed within 24 to 48 hours by our skilled team. There is no messy plastering or sanding, allowing immediate use of the room.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do you provide free doorstep measurement and site visits?</summary>
+          <div class="faq-answer">
+            Yes! We provide free doorstep measurement and consultation across Ayodhya, Lucknow, Gorakhpur, Sultanpur, Gonda, Basti, Amethi, Barabanki, and Ambedkar Nagar. Our technician brings physical sample catalogs so you can see textures in person.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can PVC panels be installed over walls with severe moisture or flaking paint?</summary>
+          <div class="faq-answer">
+            Yes, that is one of the main advantages of PVC panels. Using lightweight galvanized iron (GI) or wooden batten framing, we create an air gap that isolates the panels from the damp wall surface, completely hiding flaking paint and recurring moisture issues permanently.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Ready to Renovate Your Home with PVC Panel Wale?</h2>
+      <p>Get in touch today for a free doorstep consultation, catalog demonstration, and instant quote.</p>
+      <div class="hero-btns">
+        <a href="tel:9580659559" class="btn btn-call">
+          <svg viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.66.58 1 1 0 011 1v3.6a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.6a1 1 0 011 1c0 1.25.2 2.49.58 3.66a1 1 0 01-.24 1.01l-2.32 2.12z" />
+          </svg>
+          Call 9580659559
+        </a>
+        <a href="https://wa.me/919580659559?text=Hello%20PVC%20Panel%20Wale%2C%20I%20want%20to%20renovate%20my%20home" target="_blank" rel="noopener noreferrer" class="btn btn-wa">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5.1-3.9-10.6-6.9z" fill="white" />
+          </svg>
+          WhatsApp Us Now
+        </a>
       </div>
     </div>
   </section>
