@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.pvcpanelwale.online/sitemap.xml
+
+# LLM Optimization
+# https://www.pvcpanelwale.online/llms.txt
+# https://www.pvcpanelwale.online/llm.txt
