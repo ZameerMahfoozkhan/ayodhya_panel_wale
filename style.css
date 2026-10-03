@@ -96,7 +96,7 @@ ul{list-style:none}
 
 /* Responsive Typography */
 .home-hero h1{font-size:clamp(1.65rem,5.2vw,3.25rem);font-weight:800;line-height:1.22;color:#ffffff;margin:0 auto 14px;letter-spacing:-.02em;text-shadow:0 2px 14px rgba(0,0,0,.45)}
-.hero-highlight{display:inline-block;background:linear-gradient(135deg,#ffae66 0%,#f07a2f 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;color:var(--orange);text-shadow:none;filter:drop-shadow(0 2px 8px rgba(240,122,47,.4))}
+.hero-highlight{display:inline-block;background:linear-gradient(135deg,#ffae66 0%,#f07a2f 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--orange);text-shadow:none;filter:drop-shadow(0 2px 8px rgba(240,122,47,.4))}
 .desktop-br{display:inline}
 @media(max-width:768px){.desktop-br{display:none}}
 
