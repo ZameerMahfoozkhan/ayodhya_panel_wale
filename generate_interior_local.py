@@ -185,7 +185,7 @@ BASE_HTML = """<!DOCTYPE html>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">&copy; 2026 PVC Panel Wale. All Rights Reserved.</div>
+      <div class="footer-bottom">&copy; 2026 PVC Panel Wale. All Rights Reserved. | <a href="/sitemap" style="color: #bbb; text-decoration: none;">Sitemap</a></div>
     </div>
   </footer>
   <script src="script.js"></script>
