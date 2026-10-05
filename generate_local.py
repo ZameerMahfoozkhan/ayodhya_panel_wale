@@ -1,11 +1,40 @@
-<!DOCTYPE html>
+import os
+import json
+import random
+
+CITIES = [
+    {"name": "Ayodhya", "price_range": "₹30 – ₹55", "landmark": "Ram Mandir & Naka Bypass area"},
+    {"name": "Lucknow", "price_range": "₹35 – ₹60", "landmark": "Gomti Nagar, Alambagh & Hazratganj"},
+    {"name": "Gorakhpur", "price_range": "₹35 – ₹60", "landmark": "Golghar & Rapti Nagar"},
+    {"name": "Sultanpur", "price_range": "₹30 – ₹55", "landmark": "Civil Lines & Amhat"},
+    {"name": "Gonda", "price_range": "₹30 – ₹55", "landmark": "Mankapur & Central Gonda"},
+    {"name": "Basti", "price_range": "₹30 – ₹55", "landmark": "Gandhi Nagar & Company Bagh"},
+    {"name": "Amethi", "price_range": "₹30 – ₹55", "landmark": "Gauriganj & Jagdishpur"},
+    {"name": "Barabanki", "price_range": "₹35 – ₹60", "landmark": "Dewa Road & Satrikh"},
+    {"name": "Ambedkar Nagar", "price_range": "₹30 – ₹55", "landmark": "Akbarpur & Tanda"}
+]
+
+# Variations to prevent 100% duplicate content penalties
+HOOKS = [
+    "Are you dealing with peeling paint and damp walls in {city}? It's time to upgrade to waterproof PVC panels.",
+    "Looking for the best PVC panel installation experts in {city}? We deliver flawless, zero-seepage interior wall cladding.",
+    "Transform your {city} home or office with our premium PVC wall and ceiling panels. 100% termite-proof and waterproof."
+]
+
+SERVICES = [
+    "We provide expert PVC false ceilings, 3D louvers, and TV unit backdrops across {landmark}.",
+    "From modular kitchens to damp-proof PVC wall cladding, we service all residential and commercial properties in {landmark}.",
+    "Whether you live near {landmark} or the outskirts of {city}, our installation team provides free on-site laser measurements."
+]
+
+BASE_HTML = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta name="google-adsense-account" content="ca-pub-9800232326569456">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ETXVYMQ1X"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag() {{ dataLayer.push(arguments); }}
     gtag('js', new Date());
     gtag('config', 'G-2ETXVYMQ1X');
   </script>
@@ -13,14 +42,14 @@
   <meta name="theme-color" content="#0f1b2d">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <title>PVC Panel Installation in Basti | 2026 Price & Turnkey Service</title>
-  <meta name="description" content="Best PVC panel installation in Basti. Fix wall dampness permanently. Factory direct prices starting at ₹30 – ₹55/sq ft. Serving Gandhi Nagar & Company Bagh.">
-  <link rel="canonical" href="https://www.pvcpanelwale.online/pvc-panel-installation-basti">
+  <title>PVC Panel Installation in {city} | 2026 Price & Turnkey Service</title>
+  <meta name="description" content="Best PVC panel installation in {city}. Fix wall dampness permanently. Factory direct prices starting at {price_range}/sq ft. Serving {landmark}.">
+  <link rel="canonical" href="https://www.pvcpanelwale.online/pvc-panel-installation-{slug}">
   
   <meta property="og:type" content="website">
-  <meta property="og:title" content="PVC Panel Installation in Basti | 100% Waterproof Wall Paneling">
-  <meta property="og:description" content="Expert PVC wall and ceiling panel installation across Basti. Serving Gandhi Nagar & Company Bagh with ₹30 – ₹55 per sq ft rates.">
-  <meta property="og:url" content="https://www.pvcpanelwale.online/pvc-panel-installation-basti">
+  <meta property="og:title" content="PVC Panel Installation in {city} | 100% Waterproof Wall Paneling">
+  <meta property="og:description" content="Expert PVC wall and ceiling panel installation across {city}. Serving {landmark} with {price_range} per sq ft rates.">
+  <meta property="og:url" content="https://www.pvcpanelwale.online/pvc-panel-installation-{slug}">
   <meta property="og:image" content="https://www.pvcpanelwale.online/image/pvc-wall-panel.webp">
   
   <link rel="icon" type="image/png" sizes="48x48" href="/image/favicon-48x48.png">
@@ -28,25 +57,25 @@
   <link rel="stylesheet" href="style.css">
 
   <script type="application/ld+json">
-  {
+  {{
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    "name": "PVC Panel Wale Basti",
+    "name": "PVC Panel Wale {city}",
     "image": "https://www.pvcpanelwale.online/image/logo.webp",
-    "url": "https://www.pvcpanelwale.online/pvc-panel-installation-basti",
+    "url": "https://www.pvcpanelwale.online/pvc-panel-installation-{slug}",
     "telephone": "+919580659559",
-    "priceRange": "₹30 – ₹55",
-    "address": {
+    "priceRange": "{price_range}",
+    "address": {{
       "@type": "PostalAddress",
-      "addressLocality": "Basti",
+      "addressLocality": "{city}",
       "addressRegion": "Uttar Pradesh",
       "addressCountry": "IN"
-    },
-    "areaServed": {
+    }},
+    "areaServed": {{
       "@type": "City",
-      "name": "Basti"
-    }
-  }
+      "name": "{city}"
+    }}
+  }}
   </script>
 </head>
 <body>
@@ -72,16 +101,16 @@
     <div class="container">
       <div class="article-wrap" style="color: #fff; text-align: center;">
         <nav class="breadcrumb" style="justify-content: center; display: flex; gap: 6px;">
-          <a href="/">Home</a> &raquo; <a href="/pvc-panel-installation">Installation</a> &raquo; <span>Basti</span>
+          <a href="/">Home</a> &raquo; <a href="/pvc-panel-installation">Installation</a> &raquo; <span>{city}</span>
         </nav>
         <h1 style="font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 800; line-height: 1.25; margin-bottom: 16px;">
-          Best PVC Panel Installation in <span style="color: var(--orange);">Basti</span>
+          Best PVC Panel Installation in <span style="color: var(--orange);">{city}</span>
         </h1>
         <p style="font-size: 1.1rem; color: rgba(255,255,255,0.88); max-width: 760px; margin: 0 auto 20px;">
-          Looking for the best PVC panel installation experts in Basti? We deliver flawless, zero-seepage interior wall cladding. We provide professional PVC wall cladding, false ceilings, and 3D louver installations starting at ₹30 – ₹55 per sq.ft.
+          {hook} We provide professional PVC wall cladding, false ceilings, and 3D louver installations starting at {price_range} per sq.ft.
         </p>
         <div class="hero-btns" style="justify-content: center;">
-          <a href="tel:9580659559" class="btn btn-call" style="margin: 6px;">📞 Call 9580659559 for Free Survey in Basti</a>
+          <a href="tel:9580659559" class="btn btn-call" style="margin: 6px;">📞 Call 9580659559 for Free Survey in {city}</a>
         </div>
       </div>
     </div>
@@ -93,9 +122,9 @@
       <div class="article-wrap article-content">
         
         <section>
-          <h2>Why Choose PVC Wall Panels in Basti?</h2>
+          <h2>Why Choose PVC Wall Panels in {city}?</h2>
           <p>
-            Whether you live near Gandhi Nagar & Company Bagh or the outskirts of Basti, our installation team provides free on-site laser measurements. In Basti, many homeowners struggle with ground moisture and wall dampness (seelan). Repainting your walls every monsoon is a waste of money. 
+            {service_hook} In {city}, many homeowners struggle with ground moisture and wall dampness (seelan). Repainting your walls every monsoon is a waste of money. 
           </p>
           <p>
             Our expert technicians use a heavy-duty Galvanized Iron (GI) channel framework to install PVC panels. This creates a 1-inch air gap that lets your masonry breathe, ensuring 100% protection against dampness and termites for up to 15 years.
@@ -103,7 +132,7 @@
         </section>
 
         <section style="margin-top: 40px;">
-          <h2>Our Interior Services in Basti</h2>
+          <h2>Our Interior Services in {city}</h2>
           <div class="grid-2col" style="margin-top: 20px;">
             <div class="callout-card" style="border-top: 3px solid var(--navy);">
               <h4 style="color: var(--navy); margin-bottom: 8px;">Waterproof Wall Paneling</h4>
@@ -119,7 +148,7 @@
             </div>
             <div class="callout-card" style="border-top: 3px solid #6366F1;">
               <h4 style="color: #4338CA; margin-bottom: 8px;">Complete Modular Kitchens</h4>
-              <p style="font-size: 0.95rem; margin-bottom: 0;">100% waterproof HDHMR kitchens fabricated in our factory and assembled at your Basti property in just 15 days.</p>
+              <p style="font-size: 0.95rem; margin-bottom: 0;">100% waterproof HDHMR kitchens fabricated in our factory and assembled at your {city} property in just 15 days.</p>
             </div>
           </div>
         </section>
@@ -127,7 +156,7 @@
         <!-- CTA -->
         <div style="background: rgba(240,122,47,0.1); border-left: 4px solid var(--orange); padding: 24px; border-radius: 6px; margin: 36px 0; text-align: center;">
           <h3 style="margin-top: 0; color: var(--navy); margin-bottom: 8px;">Need a pricing estimate?</h3>
-          <p style="margin-bottom: 16px;">We offer free on-site laser measurements across Basti. Let us calculate the exact <a href="/pvc-panel-cost-per-sq-ft" style="color: var(--orange); font-weight: 600;">PVC panel cost per sq ft</a> for your specific room.</p>
+          <p style="margin-bottom: 16px;">We offer free on-site laser measurements across {city}. Let us calculate the exact <a href="/pvc-panel-cost-per-sq-ft" style="color: var(--orange); font-weight: 600;">PVC panel cost per sq ft</a> for your specific room.</p>
           <a href="https://wa.me/919580659559" target="_blank" class="btn btn-wa" rel="noopener noreferrer">Send WhatsApp Message</a>
         </div>
 
@@ -163,3 +192,30 @@
   <script src="script.js"></script>
 </body>
 </html>
+"""
+
+def generate_pages():
+    print("Generating Local SEO Pages...")
+    for city_data in CITIES:
+        city = city_data["name"]
+        slug = city.lower().replace(" ", "-")
+        
+        hook = random.choice(HOOKS).format(city=city)
+        service_hook = random.choice(SERVICES).format(city=city, landmark=city_data["landmark"])
+        
+        html_content = BASE_HTML.format(
+            city=city,
+            slug=slug,
+            price_range=city_data["price_range"],
+            landmark=city_data["landmark"],
+            hook=hook,
+            service_hook=service_hook
+        )
+        
+        filename = f"pvc-panel-installation-{slug}.html"
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(html_content)
+        print(f"Generated {filename}")
+
+if __name__ == "__main__":
+    generate_pages()

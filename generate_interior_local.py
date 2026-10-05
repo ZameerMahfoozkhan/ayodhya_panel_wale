@@ -1,11 +1,39 @@
-<!DOCTYPE html>
+import os
+import json
+import random
+
+CITIES = [
+    {"name": "Ayodhya", "price_range": "₹30 – ₹55", "landmark": "Ram Mandir & Naka Bypass area"},
+    {"name": "Lucknow", "price_range": "₹35 – ₹60", "landmark": "Gomti Nagar, Alambagh & Hazratganj"},
+    {"name": "Gorakhpur", "price_range": "₹35 – ₹60", "landmark": "Golghar & Rapti Nagar"},
+    {"name": "Sultanpur", "price_range": "₹30 – ₹55", "landmark": "Civil Lines & Amhat"},
+    {"name": "Gonda", "price_range": "₹30 – ₹55", "landmark": "Mankapur & Central Gonda"},
+    {"name": "Basti", "price_range": "₹30 – ₹55", "landmark": "Gandhi Nagar & Company Bagh"},
+    {"name": "Amethi", "price_range": "₹30 – ₹55", "landmark": "Gauriganj & Jagdishpur"},
+    {"name": "Barabanki", "price_range": "₹35 – ₹60", "landmark": "Dewa Road & Satrikh"},
+    {"name": "Ambedkar Nagar", "price_range": "₹30 – ₹55", "landmark": "Akbarpur & Tanda"}
+]
+
+HOOKS = [
+    "Looking for reliable home interior designers in {city}? Don't settle for cheap MDF and delayed timelines.",
+    "Transform your {city} property with our premium turnkey interior services. We specialize in waterproof modular kitchens and custom wardrobes.",
+    "Planning an interior renovation in {city}? From 3D design to factory CNC fabrication, we manage the entire project for you."
+]
+
+SERVICES = [
+    "From standard 2BHKs in {landmark} to premium 3BHK flats across {city}, we provide transparent pricing and written material warranties.",
+    "Whether your property is located near {landmark} or elsewhere in {city}, we deliver a flawless factory-finish without turning your home into a dusty workshop.",
+    "We serve all residential projects in {landmark} offering 100% termite-proof HDHMR woodwork and designer false ceilings."
+]
+
+BASE_HTML = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta name="google-adsense-account" content="ca-pub-9800232326569456">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-2ETXVYMQ1X"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+    function gtag() {{ dataLayer.push(arguments); }}
     gtag('js', new Date());
     gtag('config', 'G-2ETXVYMQ1X');
   </script>
@@ -13,14 +41,14 @@
   <meta name="theme-color" content="#0f1b2d">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <title>Turnkey Home Interior Designers in Amethi | PVC Panel Wale</title>
-  <meta name="description" content="Best home interior designers and turnkey decorators in Amethi. Modular kitchens, false ceilings, and custom furniture. Serving Gauriganj & Jagdishpur. Get a free 3D design quote.">
-  <link rel="canonical" href="https://www.pvcpanelwale.online/full-interior-work-amethi">
+  <title>Turnkey Home Interior Designers in {city} | PVC Panel Wale</title>
+  <meta name="description" content="Best home interior designers and turnkey decorators in {city}. Modular kitchens, false ceilings, and custom furniture. Serving {landmark}. Get a free 3D design quote.">
+  <link rel="canonical" href="https://www.pvcpanelwale.online/full-interior-work-{slug}">
   
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Complete Home Interior Work in Amethi | Turnkey Solutions">
-  <meta property="og:description" content="Factory-direct modular kitchens, waterproof false ceilings, and bespoke furniture in Amethi. Serving Gauriganj & Jagdishpur.">
-  <meta property="og:url" content="https://www.pvcpanelwale.online/full-interior-work-amethi">
+  <meta property="og:title" content="Complete Home Interior Work in {city} | Turnkey Solutions">
+  <meta property="og:description" content="Factory-direct modular kitchens, waterproof false ceilings, and bespoke furniture in {city}. Serving {landmark}.">
+  <meta property="og:url" content="https://www.pvcpanelwale.online/full-interior-work-{slug}">
   <meta property="og:image" content="https://www.pvcpanelwale.online/image/pvc-kitchen-panel.webp">
   
   <link rel="icon" type="image/png" sizes="48x48" href="/image/favicon-48x48.png">
@@ -28,25 +56,25 @@
   <link rel="stylesheet" href="style.css">
 
   <script type="application/ld+json">
-  {
+  {{
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    "name": "PVC Panel Wale Amethi Interiors",
+    "name": "PVC Panel Wale {city} Interiors",
     "image": "https://www.pvcpanelwale.online/image/logo.webp",
-    "url": "https://www.pvcpanelwale.online/full-interior-work-amethi",
+    "url": "https://www.pvcpanelwale.online/full-interior-work-{slug}",
     "telephone": "+919580659559",
     "priceRange": "₹₹",
-    "address": {
+    "address": {{
       "@type": "PostalAddress",
-      "addressLocality": "Amethi",
+      "addressLocality": "{city}",
       "addressRegion": "Uttar Pradesh",
       "addressCountry": "IN"
-    },
-    "areaServed": {
+    }},
+    "areaServed": {{
       "@type": "City",
-      "name": "Amethi"
-    }
-  }
+      "name": "{city}"
+    }}
+  }}
   </script>
 </head>
 <body>
@@ -72,16 +100,16 @@
     <div class="container">
       <div class="article-wrap" style="color: #fff; text-align: center;">
         <nav class="breadcrumb" style="justify-content: center; display: flex; gap: 6px;">
-          <a href="/">Home</a> &raquo; <a href="/full-interior-work">Interior</a> &raquo; <span>Amethi</span>
+          <a href="/">Home</a> &raquo; <a href="/full-interior-work">Interior</a> &raquo; <span>{city}</span>
         </nav>
         <h1 style="font-size: clamp(1.9rem, 4vw, 2.7rem); font-weight: 800; line-height: 1.25; margin-bottom: 16px;">
-          Complete Home Interior Work in <span style="color: var(--orange);">Amethi</span>
+          Complete Home Interior Work in <span style="color: var(--orange);">{city}</span>
         </h1>
         <p style="font-size: 1.1rem; color: rgba(255,255,255,0.88); max-width: 760px; margin: 0 auto 20px;">
-          Transform your Amethi property with our premium turnkey interior services. We specialize in waterproof modular kitchens and custom wardrobes. We deliver factory-direct modular kitchens, waterproof false ceilings, and custom furniture with a strict 45-day timeline.
+          {hook} We deliver factory-direct modular kitchens, waterproof false ceilings, and custom furniture with a strict 45-day timeline.
         </p>
         <div class="hero-btns" style="justify-content: center;">
-          <a href="tel:9580659559" class="btn btn-call" style="margin: 6px;">📞 Call 9580659559 for Amethi Free Visit</a>
+          <a href="tel:9580659559" class="btn btn-call" style="margin: 6px;">📞 Call 9580659559 for {city} Free Visit</a>
         </div>
       </div>
     </div>
@@ -93,9 +121,9 @@
       <div class="article-wrap article-content">
         
         <section>
-          <h2>Turnkey Interior Designers in Amethi</h2>
+          <h2>Turnkey Interior Designers in {city}</h2>
           <p>
-            Whether your property is located near Gauriganj & Jagdishpur or elsewhere in Amethi, we deliver a flawless factory-finish without turning your home into a dusty workshop. Most homeowners in Amethi suffer through messy renovations with local carpenters who delay projects and use cheap plywood that eventually rots.
+            {service_hook} Most homeowners in {city} suffer through messy renovations with local carpenters who delay projects and use cheap plywood that eventually rots.
           </p>
           <p>
             At PVC Panel Wale, we handle 100% of the project management. We use <strong>Action TESA HDHMR boards</strong> (termite-proof & waterproof) and assemble the modules in our factory using CNC machines. The result? 100% transparency, flawless finish, and zero hidden costs.
@@ -103,11 +131,11 @@
         </section>
 
         <section style="margin-top: 40px;">
-          <h2>Our 4-Step Process in Amethi</h2>
+          <h2>Our 4-Step Process in {city}</h2>
           <div class="grid-2col" style="margin-top: 24px;">
             <div class="callout-card" style="border-top: 3px solid var(--navy);">
-              <h4 style="color: var(--navy); margin-bottom: 8px;">1. Free Amethi Site Visit</h4>
-              <p style="font-size: 0.95rem; margin-bottom: 0;">Our engineer visits your property in Gauriganj & Jagdishpur with laser measurement tools to check for wall dampness and note exact dimensions.</p>
+              <h4 style="color: var(--navy); margin-bottom: 8px;">1. Free {city} Site Visit</h4>
+              <p style="font-size: 0.95rem; margin-bottom: 0;">Our engineer visits your property in {landmark} with laser measurement tools to check for wall dampness and note exact dimensions.</p>
             </div>
             <div class="callout-card" style="border-top: 3px solid var(--orange);">
               <h4 style="color: var(--orange); margin-bottom: 8px;">2. 3D Design & Quote</h4>
@@ -115,7 +143,7 @@
             </div>
             <div class="callout-card" style="border-top: 3px solid #25D366;">
               <h4 style="color: #047857; margin-bottom: 8px;">3. Factory Fabrication</h4>
-              <p style="font-size: 0.95rem; margin-bottom: 0;">80% of your woodwork is cut and finished in our specialized factory, keeping your Amethi living room dust-free.</p>
+              <p style="font-size: 0.95rem; margin-bottom: 0;">80% of your woodwork is cut and finished in our specialized factory, keeping your {city} living room dust-free.</p>
             </div>
             <div class="callout-card" style="border-top: 3px solid #6366F1;">
               <h4 style="color: #4338CA; margin-bottom: 8px;">4. Rapid Installation</h4>
@@ -163,3 +191,30 @@
   <script src="script.js"></script>
 </body>
 </html>
+"""
+
+def generate_pages():
+    print("Generating Local Interior Pages...")
+    for city_data in CITIES:
+        city = city_data["name"]
+        slug = city.lower().replace(" ", "-")
+        
+        hook = random.choice(HOOKS).format(city=city)
+        service_hook = random.choice(SERVICES).format(city=city, landmark=city_data["landmark"])
+        
+        html_content = BASE_HTML.format(
+            city=city,
+            slug=slug,
+            price_range=city_data["price_range"],
+            landmark=city_data["landmark"],
+            hook=hook,
+            service_hook=service_hook
+        )
+        
+        filename = f"full-interior-work-{slug}.html"
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(html_content)
+        print(f"Generated {filename}")
+
+if __name__ == "__main__":
+    generate_pages()
