@@ -6,3 +6,8 @@ image/unused/
 .DS_Store
 Thumbs.db
 *.tmp
+
+# GSC Reports and Audit Files
+*.zip
+*.md
+*-audit/
