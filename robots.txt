@@ -1,8 +1,29 @@
-User-agent: *
+# AI Search Engines & Citation Crawlers (Allowed for real-time search referrals)
+User-agent: OAI-SearchBot
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Bulk Model Training Scrapers (Permitted with Content-Signal guidelines)
+User-agent: GPTBot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+User-agent: ClaudeBot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# General Crawlers (Googlebot, Bingbot, etc.)
+User-agent: *
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# XML Sitemaps & LLM Discovery
 Sitemap: https://www.pvcpanelwale.online/sitemap.xml
 
-# LLM Optimization
+# LLM Ground Truth Documentation
 # https://www.pvcpanelwale.online/llms.txt
-# https://www.pvcpanelwale.online/llm.txt

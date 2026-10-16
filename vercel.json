@@ -90,6 +90,26 @@
       "source": "/pvc-panels-ayodhya",
       "destination": "/pvc-panel-installation-ayodhya",
       "permanent": true
+    },
+    {
+      "source": "/pvc-wall-panel-ayodhya.html",
+      "destination": "/pvc-panel-installation-ayodhya",
+      "permanent": true
+    },
+    {
+      "source": "/pvc-wall-panel-ayodhya",
+      "destination": "/pvc-panel-installation-ayodhya",
+      "permanent": true
+    },
+    {
+      "source": "/pvc-panel-price-ayodhya.html",
+      "destination": "/pvc-panel-installation-ayodhya",
+      "permanent": true
+    },
+    {
+      "source": "/pvc-panel-price-ayodhya",
+      "destination": "/pvc-panel-installation-ayodhya",
+      "permanent": true
     }
   ],
   "headers": [

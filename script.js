@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
       lightbox.classList.remove('active');
       lightbox.setAttribute('aria-hidden', 'true');
       document.body.style.overflow = '';
-      lightboxImg.src = '';
+      lightboxImg.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1024' height='1024'%3E%3C/svg%3E";
     }
 
     galleryImages.forEach(function (img) {
