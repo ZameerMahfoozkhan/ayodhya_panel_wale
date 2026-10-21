@@ -19,6 +19,9 @@
   RewriteRule ^pvc-panels-amethi(\.html)?$ /pvc-panel-installation-amethi [R=301,L]
   RewriteRule ^pvc-panels-barabanki(\.html)?$ /pvc-panel-installation-barabanki [R=301,L]
   RewriteRule ^pvc-panels-ambedkar-nagar(\.html)?$ /pvc-panel-installation-ambedkar-nagar [R=301,L]
+  RewriteRule ^pvc-panels-ayodhya(\.html)?$ /pvc-panel-installation-ayodhya [R=301,L]
+  RewriteRule ^pvc-wall-panel-ayodhya(\.html)?$ /pvc-panel-installation-ayodhya [R=301,L]
+  RewriteRule ^pvc-panel-price-ayodhya(\.html)?$ /pvc-panel-installation-ayodhya [R=301,L]
 
   # ----------------------------------------------------------------------
   # 2. REMOVE .html EXTENSION FROM EXTERNAL REQUESTS (301 Redirect)
