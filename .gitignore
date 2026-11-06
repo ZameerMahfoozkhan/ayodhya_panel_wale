@@ -11,3 +11,5 @@ Thumbs.db
 *.zip
 *.md
 *-audit/
+scratch_chrome_profile/
+gsc_*_extracted/
